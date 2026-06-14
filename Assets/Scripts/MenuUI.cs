@@ -7,7 +7,7 @@ using TMPro;
 
 public class MenuUI : MonoBehaviour
 {
-
+    string defaultName = "Name";
 
     public void SaveName(string name)
     {
@@ -16,6 +16,10 @@ public class MenuUI : MonoBehaviour
 
     public void StartNew()
     {
+        if (StaticManager.Instance.playerName == string.Empty)
+        {
+            StaticManager.Instance.playerName = defaultName;
+        }
         SceneManager.LoadScene(1);
     }
 

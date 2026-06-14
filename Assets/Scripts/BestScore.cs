@@ -19,7 +19,7 @@ public class BestScore : MonoBehaviour
 
     public void ResetBestScore()
     {
-        StaticManager.Instance.bestPlayerName = "none";
+        StaticManager.Instance.bestPlayerName = "None";
         StaticManager.Instance.bestScore = 0;
         StaticManager.Instance.SaveGameData();
 
