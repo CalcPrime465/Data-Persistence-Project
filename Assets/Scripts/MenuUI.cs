@@ -28,4 +28,14 @@ public class MenuUI : MonoBehaviour
 #endif
         StaticManager.Instance.SaveGameData();
     }
+
+    public void HighScoreScene()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -27,6 +27,10 @@ public class MainManager : MonoBehaviour
         {
             UpdateBestScore(StaticManager.Instance.bestScore, StaticManager.Instance.bestPlayerName);
         }
+        else
+        {
+            UpdateBestScore(0, "name");
+        }
 
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);

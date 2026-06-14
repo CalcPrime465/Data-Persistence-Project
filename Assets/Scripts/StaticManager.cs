@@ -7,7 +7,7 @@ public class StaticManager : MonoBehaviour
     public static StaticManager Instance;
 
     public int bestScore = 0;
-    public string playerName = "name";
+    public string playerName = "none";
     public string bestPlayerName;
 
     private void Awake()
